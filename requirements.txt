@@ -1,0 +1,42 @@
+# ── Mineral Exploration Intelligence System ──────────────────────────────────
+# Python 3.11+ required
+# Install: pip install -r requirements.txt
+
+# ── Web Framework ─────────────────────────────────────────────────────────────
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.12          # File uploads
+
+
+
+# ── Vector Store ──────────────────────────────────────────────────────────────
+lancedb==0.13.0
+
+# ── Embeddings (local, no API key needed) ────────────────────────────────────
+sentence-transformers==3.3.1
+torch==2.5.1                      # CPU-only; remove and reinstall GPU version if needed
+
+# ── Document Processing ───────────────────────────────────────────────────────
+pymupdf==1.25.1                   # PDF parsing (fitz)
+Pillow==11.0.0                    # Image processing
+
+# ── Data Processing ───────────────────────────────────────────────────────────
+pandas==2.2.3
+numpy==1.26.4
+
+# ── Config & Validation ───────────────────────────────────────────────────────
+pydantic==2.10.3
+pydantic-settings==2.6.1
+
+# ── HTTP Client ───────────────────────────────────────────────────────────────
+httpx==0.28.1
+
+# ── Optional: Hyperspectral (install separately if needed) ───────────────────
+# spectral==0.23.1                 # ENVI hyperspectral file support
+# rasterio==1.4.3                  # GeoTIFF with geospatial metadata
+
+# ── Development ───────────────────────────────────────────────────────────────
+pytest==8.3.4
+pytest-asyncio==0.24.0
+httpx==0.28.1                     # Test client for FastAPI
+python-dotenv==1.0.1

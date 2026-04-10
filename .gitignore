@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Environment variables (API keys)
+.env
+
+# Vector database
+lancedb/
+
+# Data files
+data/
+uploads/
+*.csv
+*.json
+
+# Documents & images
+*.pdf
+*.png
+*.jpg
+*.jpeg
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.env.docker
+docker-compose.override.yml
